@@ -6,7 +6,14 @@ import Scan from './pages/Scan.tsx';
 
 function App() {
   return (
-   
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/scan" element={<Scan />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
