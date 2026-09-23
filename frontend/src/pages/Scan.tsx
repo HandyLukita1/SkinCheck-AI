@@ -23,4 +23,28 @@ export default function Scan() {
 
 
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    let timer: number;
+    if (isRateLimited) {
+      timer = setTimeout(() => {
+        setIsRateLimited(false);
+        setAttempts(0);
+      }, COOLDOWN_TIME);
+    }
+    return () => clearTimeout(timer);
+  }, [isRateLimited]);
+
+  const handleDrag = (e: React.DragEvent<HTMLFormElement | HTMLDivElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (e.type === "dragenter" || e.type === "dragover") {
+      setDragActive(true);
+    } else if (e.type === "dragleave") {
+      setDragActive(false);
+    }
+  };
+
+
+
 }
