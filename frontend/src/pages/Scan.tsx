@@ -62,10 +62,17 @@ export default function Scan() {
     }
   };
 
-  
+  const handleFileProcess = (selectedFile: File) => {
+    const validTypes = ['image/jpeg', 'image/png', 'image/jpg'];
+    if (!validTypes.includes(selectedFile.type)) {
+      alert("Please upload .png or .jpg file");
+      return;
+    }
 
 
 
 
 
+
+  }
 }
