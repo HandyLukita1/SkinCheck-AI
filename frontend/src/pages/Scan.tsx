@@ -68,11 +68,26 @@ export default function Scan() {
       alert("Please upload .png or .jpg file");
       return;
     }
+  
+  const fileSizeMB = selectedFile.size / 1024 / 1024;
+    if (fileSizeMB > MAX_FILE_SIZE_MB) {
+      alert(`File is too big, max ${MAX_FILE_SIZE_MB}MB.`);
+      return;
+    }
+   
+    setFile(selectedFile);
+    setPreview(URL.createObjectURL(selectedFile));
+    setResult(null);
+
+    
 
 
 
 
 
 
-  }
+
+
+  };
+
 }
