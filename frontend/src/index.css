@@ -1,0 +1,24 @@
+/* Home Page */
+.home-container, div {
+  box-sizing: border-box;
+}
+
+
+/* Fix untidy images on the home page */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*  headings and text flow  */
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+
+body {
+    margin : 0;
+    padding : 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
