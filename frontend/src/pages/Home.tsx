@@ -30,6 +30,58 @@ export default function Home() {
             maxWidth: '1200px',
             alignItems: 'center'
         }}>
+        
+         <div style={{ textAlign: 'left' }}>
+             <div style={{ 
+                display: 'inline-block',
+                backgroundColor: '#e0f2fe',
+                color: '#0284c7',
+                padding: '0.4rem 1rem',
+                borderRadius: '9999px',
+                fontSize: '0.85rem',
+                fontWeight: 700,
+                marginBottom: '1.2rem',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase' }}>
+              AI-Powered Dermatology
+            </div>
+
+            <h1 style={{
+              fontSize: '3rem',
+              fontWeight: 900,
+              color: '#1A3052',
+              marginBottom: '1rem',
+              lineHeight: 1.15 }}>
+              Detect Skin Conditions <br/>
+
+              <span style={{ 
+                  background: 'linear-gradient(to right, #38bdf8, #22c55e)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent' }}>in One Click</span>
+            </h1>
+
+             <p style={{ 
+                fontSize: '1.25rem',
+                color: '#64748b',
+                marginBottom: '2rem',
+                lineHeight: 1.6,
+                maxWidth: '500px' }}>
+              Advanced, fast, and secure preliminary skin screening right from your device.
+            </p>
+
+
+
+
+
+
+
+
+         </div>
+
+
+        
+
+        
 
         </div>
 
