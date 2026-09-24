@@ -10,7 +10,7 @@ export default function Layout() {
             fontFamily: 'system-ui,sans-serif'
         }}>
          
-         {/* Now is Header File*/}
+         {/* Now is Navbar File*/}
          <header style={{
             display: 'flex',
             justifyContent: 'space-between',
@@ -22,6 +22,43 @@ export default function Layout() {
             top: 0,
             zIndex: 1000
          }}>
+        
+          <div style={{ 
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem' }}>
+
+          <span style={{ 
+              fontSize: '1.25rem',
+              fontWeight: 800,
+              color: '#1A3052',
+              letterSpacing: '-0.02em' }}
+              >SkinCheckAI</span>
+        </div>
+
+        <nav style={{
+            display: 'flex',
+            gap: '2rem' }
+          }>
+            
+          <Link to="/" style={{ 
+              textDecoration: 'none',
+              color: '#475569',
+              fontWeight: 600,
+              fontSize: '1rem' }}
+              >Home</Link>
+
+            <Link to="/scan" style={{ 
+              textDecoration: 'none',
+              color: '#475569',
+              fontWeight: 600,
+              fontSize: '1rem' }}
+              >Scanner</Link>
+        </nav>
+      </header>
+
+
+
             
          </header>
         </div>
