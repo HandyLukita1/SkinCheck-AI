@@ -96,8 +96,16 @@ export default function Scan() {
       console.error(error);
       const msg = error.response?.data?.error || "Failed to connect to server.";
       alert(msg);
-    } 
-
-
+    } finally {
+      setLoading(false);
+    }
   };
+
+  const resetScan = () => {
+    setFile(null);
+    setPreview(null);
+    setResult(null);
+  };
+
+  
 }
