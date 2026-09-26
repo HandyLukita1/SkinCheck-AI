@@ -78,16 +78,11 @@ export default function Scan() {
     setFile(selectedFile);
     setPreview(URL.createObjectURL(selectedFile));
     setResult(null);
-
-    
-
-
-
-
-
-
-
-
   };
+  
+  const handleUpload = async () => {
+    if (!file) return;
+
+
 
 }
