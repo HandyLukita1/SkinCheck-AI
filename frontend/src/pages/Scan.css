@@ -1,0 +1,19 @@
+p {
+    color: red;
+    background-color: blue;
+}
+
+body {
+    background-color: white;
+    inline-size: '0.1 rem';
+    padding-bottom: '0.2 rem';
+    padding-left: '0.4 rem';
+    padding-top: 0.5 rem;
+}
+
+header {
+    color: red;
+    background-origin: content-box;
+    align-items: center;
+    font: 200;
+}
