@@ -92,7 +92,11 @@ export default function Scan() {
     try {
       const response = await axios.post(`${API_BASE_URL}/predict`, formData);
       setResult(response.data);
-    }
+    } catch (error: any) {
+      console.error(error);
+      const msg = error.response?.data?.error || "Failed to connect to server.";
+      alert(msg);
+    } 
 
 
   };
