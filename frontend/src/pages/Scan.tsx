@@ -89,5 +89,11 @@ export default function Scan() {
     formData.append('file', file);
 
 
+    try {
+      const response = await axios.post(`${API_BASE_URL}/predict`, formData);
+      setResult(response.data);
+    }
+
+
   };
 }
