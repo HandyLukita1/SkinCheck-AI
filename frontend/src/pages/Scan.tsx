@@ -79,10 +79,15 @@ export default function Scan() {
     setPreview(URL.createObjectURL(selectedFile));
     setResult(null);
   };
-  
+
   const handleUpload = async () => {
     if (!file) return;
+    
+    setAttempts(prev => prev + 1);
+    setLoading(true);
+    const formData = new FormData();
+    formData.append('file', file);
 
 
-
+  };
 }
