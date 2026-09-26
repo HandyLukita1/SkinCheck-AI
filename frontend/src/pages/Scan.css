@@ -22,3 +22,12 @@
   padding: 2rem;
   box-sizing: border-box;
 }
+
+.scan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
