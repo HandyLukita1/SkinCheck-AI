@@ -107,5 +107,19 @@ export default function Scan() {
     setResult(null);
   };
 
-  
+  // Scanner Content
+
+  return (
+    <div className="scan-page">
+      <div className="scan-card-wrapper">
+        <div className="scan-header">
+          <h2>Scan Your Skin here</h2>
+          <p>Upload your skin condition sample image</p>
+        </div>
+        
+      </div>
+    </div>
+  )
+
+
 }
