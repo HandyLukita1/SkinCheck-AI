@@ -82,46 +82,24 @@ export default function Layout() {
             fontSize: '1.1rem',
             margin: '0 0 0.25rem 0' }}
             >SkinCheckAI</p>
-          <p style = {{
-            color: '#ffffff',
-            fontWeight: 700,
-            fontSize: '1.1 rem',
-            margin: '0.25 rem'
-          }}> Your Dermatologist Solution, where we provide details
-              about your skin like normal mole and bad mole
+          <p style={
+            { fontSize: '0.9rem',
+              margin: 0 }
+            }>© SkinCheckAI Project 2026. All rights reserved.</p>
+        </div>
+
+         <div style={{ 
+            maxWidth: '400px',
+            textAlign: 'right' }}>
+            <p style={{ 
+              fontSize: '0.8rem',
+              margin: 0,
+              opacity: 0.8,
+              lineHeight: 1.4 }}>
+            This system is an assistive tool, not a replacement for professional medical diagnosis.
           </p>
-        </div>
-
-        <div style ={{
-          maxWidth: '400px',
-          maxHeight: '600px'
-        }}>
-          <p style = {{
-            color: '#ffffff',
-            fontWeight: 500,
-            fontSize: '1.3 rem',
-            margin: '0.22 rem'
-          }}> This is an assistive tool, not a change for professional</p>
-        </div>
-
-      
-
-        
-        
-
-
-        
-  
-
+          </div>
       </footer>
-
-
-
-      
-
-
-
-            
-         </div>
+    </div>
     );
 }
