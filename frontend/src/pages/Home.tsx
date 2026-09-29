@@ -69,6 +69,8 @@ export default function Home() {
               Advanced, fast, and secure preliminary skin screening right from your device.
             </p>
 
+            
+
 
 
 

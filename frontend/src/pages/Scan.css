@@ -31,3 +31,48 @@
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
+.scan-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+
+.scan-header p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+
+.hidden-input {
+  display: none;
+}
+
+
+.dropzone-box {
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropzone-box:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+}
+
+
+.drag-active {
+  background: rgba(255, 255, 255, 0.3) !important;
+  border-color: #ffffff !important;
+  transform: scale(1.01);
+}
+
+
