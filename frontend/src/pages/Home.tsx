@@ -69,7 +69,71 @@ export default function Home() {
               Advanced, fast, and secure preliminary skin screening right from your device.
             </p>
 
-            
+
+            <div style={
+              { display: 'flex',
+                gap: '1rem',
+                alignItems: 'center' }}>
+
+
+              <Link
+                to="/scan"
+                style={{
+                  background: 'linear-gradient(135deg, #38bdf8 0%, #22c55e 100%)',
+                  color: '#ffffff',
+                  fontSize: '1.15rem',
+                  fontWeight: 700,
+                  padding: '0.85rem 2.2rem',
+                  borderRadius: '9999px',
+                  textDecoration: 'none',
+                  boxShadow: '0 10px 20px rgba(34, 197, 94, 0.2)',
+                  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                  display: 'inline-block'
+                }}
+              >
+                Start Scanning Now
+              </Link>
+            </div>
+          </div>
+
+
+          <div style={{ 
+              display: 'flex',
+              justifyContent: 'center' }}>
+
+
+            <div style={{ 
+                position: 'relative',
+                width: '100%',
+                maxWidth: '480px',
+                background: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)',
+                borderRadius: '2rem',
+                padding: '2rem',
+                boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.05)'}}>
+
+
+
+              <img
+                src={coverImage}
+                draggable="false"
+                style={
+                  { width: '100%',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    userSelect: 'none',
+                    filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.1))' }}
+                alt="Cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
 
 
 
@@ -81,17 +145,5 @@ export default function Home() {
          </div>
 
 
-        
-
-        
-
-        </div>
-
-
-    </div>
-        
-
-
-</div>
     )
 }
