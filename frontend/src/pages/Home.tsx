@@ -116,8 +116,7 @@ export default function Home() {
               <img
                 src={coverImage}
                 draggable="false"
-                style={
-                  { width: '100%',
+                style={{ width: '100%',
                     height: 'auto',
                     objectFit: 'contain',
                     userSelect: 'none',
