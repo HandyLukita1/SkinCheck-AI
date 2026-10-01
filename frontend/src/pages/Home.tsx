@@ -111,8 +111,6 @@ export default function Home() {
                 padding: '2rem',
                 boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.05)'}}>
 
-
-
               <img
                 src={coverImage}
                 draggable="false"
@@ -120,7 +118,7 @@ export default function Home() {
                     height: 'auto',
                     objectFit: 'contain',
                     userSelect: 'none',
-                    filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.1))' }}
+                    filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.1))'}}
                 alt="Cover"
               />
             </div>
@@ -128,21 +126,125 @@ export default function Home() {
         </div>
       </div>
 
+      {/*Middle Section for Early Detection text*/}
+
+      <div style={{
+        width: '100%',
+        background: 'linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%)',
+        padding: '6rem 2rem',
+        color: '#ffffff'
+      }}>
+      
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: '4rem',
+        alignItems: 'center',
+        maxWidth: '1200px',
+        margin: '0 auto'
+      }}>
+
+       <div style={{ 
+        display: 'flex',
+        justifyContent: 'center' }}>
+
+        <img src={asset1} draggable="false" style={{ 
+          width: '100%',
+          maxWidth: '450px',
+          objectFit: 'contain',
+          userSelect: 'none',
+          filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.15))' }}
+
+          alt="Early Detection"
+          />
+
+      </div>
+
+      <div style={{ textAlign: 'left' }}>
+
+         <h2 style={{ 
+          fontSize: '2.75rem',
+          fontWeight: 800,
+          marginBottom: '2rem',
+          lineHeight: 1.2,
+          letterSpacing: '-0.02em' }}>
+          Early Skin Detection Matters</h2>
+      
+        <div style={{ 
+          marginBottom: '1.75rem',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '0.3rem' }}>
 
 
+          <h3 style={{ 
+            fontWeight: 700,
+            fontSize: '1.4rem',
+            margin: 0,
+            color: '#e0f2fe' }}>
+            Catch Abnormalities Early</h3>
+
+          <p style={{ 
+            fontSize: '1.04rem',
+            margin: 0,
+            opacity: 0.9,
+            lineHeight: 1.5,
+            maxWidth: '500px' }}>
+            Identifying skin irregularities early allows for prompt medical evaluation and ultimate peace of mind.
+            </p>
+            </div>
+
+      <div style={{ 
+        marginBottom: '1.75rem',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '0.3rem' }}>
+      
+      <h3 style={{ 
+        fontWeight: 700,
+        fontSize: '1.4rem',
+        margin: 0,
+        color: '#e0f2fe' }}>
+        Prevent Complications
+        </h3>
+      
+       <p style={{ 
+        fontSize: '1.05rem',
+        margin: 0,
+        opacity: 0.9,
+        lineHeight: 1.5,
+        maxWidth: '500px' }}>
+        Timely monitoring prevents minor dermatological concerns from escalating into major issues.
+        </p>
+
+        </div>
+
+      <div style={{ 
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '0.3rem' }}>
 
 
+        <h3 style={{ 
+          fontWeight: 700,
+          fontSize: '1.4rem',
+          margin: 0,
+          color: '#e0f2fe' }}>
+          Empower Your Health
+         </h3>
+         
+         <p style={
+                { fontSize: '1.05rem',
+                  margin: 0,
+                  opacity: 0.9,
+                  lineHeight: 1.5,
+                  maxWidth: '500px' }}>
+                Quick screening gives you actionable insights before consulting to a professional specialist.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
-
-
-
-
-
-
-         </div>
-
-
-    )
+  );
 }
