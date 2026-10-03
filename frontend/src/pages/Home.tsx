@@ -70,10 +70,10 @@ export default function Home() {
             </p>
 
 
-            <div style={
-              { display: 'flex',
-                gap: '1rem',
-                alignItems: 'center' }}>
+            <div style={{
+              display: 'flex',
+              gap: '1rem',
+              alignItems: 'center' }}>
 
 
               <Link
@@ -233,18 +233,184 @@ export default function Home() {
           Empower Your Health
          </h3>
          
-         <p style={
-                { fontSize: '1.05rem',
-                  margin: 0,
-                  opacity: 0.9,
-                  lineHeight: 1.5,
-                  maxWidth: '500px' }}>
-                Quick screening gives you actionable insights before consulting to a professional specialist.
+         <p style={{ 
+              fontSize: '1.05rem',
+              margin: 0,
+              opacity: 0.9,
+              lineHeight: 1.5,
+              maxWidth: '500px' }}>
+              Quick screening gives you actionable insights before consulting to a professional specialist.
               </p>
             </div>
           </div>
         </div>
       </div>
 
+
+       {/* - BOTTOM SECTION - */}
+      <div style={{ 
+        width: '100%',
+        backgroundColor: '#ffffff',
+        padding: '6rem 2rem' }}>
+
+
+        <div style={{ 
+          textAlign: 'center',
+          marginBottom: '3.5rem' }}>
+
+
+          <h2 style={{ 
+            fontSize: '2.25rem',
+            fontWeight: 800,
+            color: '#1e293b',
+            marginBottom: '0.75rem' }}>
+            Powered by Advanced Technology
+          </h2>
+
+          <p style={{ 
+            fontSize: '1.1rem',
+            color: '#64748b' }}>
+            Built for precision, speed, and safety.
+          </p>
+        </div>
+
+        <div style={{ 
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '2.5rem',
+          maxWidth: '1200px',
+          margin: '0 auto',
+          width: '100%' }}>
+         
+          <div style={{ 
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            padding: '3rem 2rem',
+            background: 'linear-gradient(to bottom, #FFFFFF 0%, #F8FDFF 100%)',
+            borderRadius: '2rem',
+            border: '1px solid #e2e8f0',
+            boxShadow: '0 10px 30px rgba(77,147,255,0.08)',
+            transition: 'transform 0.3s ease' }}>
+
+            <div style={{ 
+              backgroundColor: '#f0f9ff',
+              padding: '1.5rem',
+              borderRadius: '50%',
+              marginBottom: '1.5rem' }}>
+
+              <img src={asset2} draggable="false" style={{ 
+                width: '64px',
+                height: '64px',
+                objectFit: 'contain',
+                userSelect: 'none' }} 
+                alt="Feature 1" />
+            </div>
+
+            <h3 style={{ 
+              fontSize: '1.25rem',
+              fontWeight: 700,
+              color: '#1A3052',
+              marginBottom: '0.75rem' }}>
+              Modern Tech Stack
+            </h3>
+
+            <p style={{ 
+              fontSize: '1rem',
+              color: '#64748b',
+              lineHeight: 1.6 }}>
+              Built using Vite JS and powerful Machine Learning Tools like TensorFlow along with MobileNetV2.
+            </p>
+          </div>
+
+          <div style={{ 
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            padding: '3rem 2rem',
+            background: 'linear-gradient(to bottom, #FFFFFF 0%, #F8FDFF 100%)',
+            borderRadius: '2rem',
+            border: '1px solid #e2e8f0',
+            boxShadow: '0 10px 30px rgba(77,147,255,0.08)',
+            transition: 'transform 0.3s ease' }}>
+
+            <div style={{ 
+              backgroundColor: '#f0f9ff',
+              padding: '1.5rem',
+              borderRadius: '50%',
+              marginBottom: '1.5rem' }}>
+
+              <img src=
+              {asset3} draggable="false" style={{ 
+                width: '64px',
+                height: '64px',
+                objectFit: 'contain',
+                userSelect: 'none' }} 
+                alt="Feature 2" />
+            </div>
+
+            <h3 style={{ 
+              fontSize: '1.25rem',
+              fontWeight: 700,
+              color: '#1A3052',
+              marginBottom: '0.75rem' }}>
+              Instant Analysis
+            </h3>
+
+            <p style={{ 
+              fontSize: '1rem',
+              color: '#64748b',
+              lineHeight: 1.6 }}>
+              Detect skin risks and potential irregularities in mere seconds with optimized image processing.
+            </p>
+          </div>
+         
+          <div style={{ 
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            padding: '3rem 2rem',
+            background: 'linear-gradient(to bottom, #FFFFFF 0%, #F8FDFF 100%)',
+            borderRadius: '2rem',
+            border: '1px solid #e2e8f0',
+            boxShadow: '0 10px 30px rgba(77,147,255,0.08)',
+            transition: 'transform 0.3s ease' }}>
+             
+            <div style={{ 
+              backgroundColor: '#f0f9ff',
+              padding: '1.5rem',
+              borderRadius: '50%',
+              marginBottom: '1.5rem' }}>
+
+              <img src={asset4} draggable="false" style={{ 
+                width: '64px',
+                height: '64px',
+                objectFit: 'contain',
+                userSelect: 'none' }} 
+                alt="Feature 3" />
+            </div>
+
+
+            <h3 style={{ 
+              fontSize: '1.25rem',
+              fontWeight: 700,
+              color: '#1A3052',
+              marginBottom: '0.75rem' }}>
+              Secure & Private
+            </h3>
+           
+            <p style={{ 
+              fontSize: '1rem',
+              color: '#64748b',
+              lineHeight: 1.6 }}>
+              Fast, accurate, and secure screening designed to prioritize user data safety and confidentiality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
