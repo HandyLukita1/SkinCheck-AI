@@ -152,7 +152,7 @@ export default function Scan() {
               </p>
             </div>
           </form>
-        )  : (
+        )  ) : (
           <div className="preview-container">
             <div className="preview-image-box">
               <img src={preview} alt="Preview" className="preview-img" />
