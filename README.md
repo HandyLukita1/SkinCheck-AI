@@ -7,7 +7,7 @@ An intelligent web platform designed for automated skin lesion analysis and mult
 SkinCheckAI evaluates dermatological images to classify conditions into four distinct categories: **Abnormal Mole**, **Normal Skin**, **Normal Mole**, and **Rash**. Built upon a fine-tuned MobileNetV2 architecture, the application delivers rapid, real-time predictions through a lightweight Flask API connected to an interactive React interface.
 
 * **Model Architecture:** MobileNetV2 (Pre-trained on ImageNet with custom classification layers)
-* **Supported Classes:** `abnormal_mole`, `normal`, `normal_mole`, `rash`
+* **Supported Classes:** `abnormal_mole`, `normal_skin`, `normal_mole`, `rash_skin`
 * **Input Specifications:** 224x224 RGB image
 * **Inference Focus:** Optimized for low-latency CPU processing
 
