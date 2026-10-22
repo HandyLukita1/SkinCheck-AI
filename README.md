@@ -18,7 +18,7 @@ SkinCheckAI evaluates dermatological images to classify conditions into four dis
 ### Core Technologies
 * **AI & Machine Learning:** TensorFlow, Keras, NumPy
 * **Backend API:** Python 3.10+, Flask, Flask-CORS, Flask-Limiter, Pillow
-* **Frontend Application:** React 19, TypeScript, Vite, Axios, CSS Modules / Modern CSS
+* **Frontend Application:** React 19, TypeScript, Axios, Vite
 
 ---
 
